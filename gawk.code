@@ -1,0 +1,17 @@
+# Filename      gawk.code
+# Date          2/28/2020
+# Author        Noah Sims
+# Email         ngs170000@utdallas.edu
+# Course        CS 3377.501 Spring 2020
+# Version       1.0
+# Copyright 2019, All Rights Reserved
+#
+# Description
+#
+#     This gawk program takes a text file containing lines of integers seperated by spaces and sums the 1st column and the 4th column, then
+#     outputs the result
+#
+
+{ sum1 += $1 }
+{ sum4 += $4 }
+END {print sum1 " " sum4}
